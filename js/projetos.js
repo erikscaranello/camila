@@ -49,3 +49,20 @@ function fechar() {
 	$('#visualizar').remove();
 	$('.escuro').remove();
 }
+
+
+// fix for projects pages
+//this code close modal and remove blur/opacity + black from this page
+
+$(document).ready(function(){
+	
+	$('.infos-projetos ul').children().on('click',function(){
+				
+		document.querySelector('.escuro').addEventListener('click' , function(){
+		
+			fechar();
+		
+		});
+	});
+
+})

@@ -22,6 +22,38 @@ body {
 }
 
 
+.links-menu-superior .topo-projetos span{
+	font-family: arial;
+	font-size: 8px;
+	text-align: center;
+	margin-left: 3px
+}
+
+.links-menu-superior img {
+	display: block;
+	margin:  0 auto;
+}
+
+.links-menu-superior .topo-contato span{
+	font-family: arial;
+	font-size: 8px;
+	text-align: center;
+	width: 100%;
+	margin-left: 10px
+}
+
+.links-menu-superior li {
+	display: block;
+	float: left;
+	width: 100px
+}
+
+.links-menu-superior a, .links-menu-superior a:hover, .links-menu-superior a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+
 img {
 	max-width: 100%;
 }
@@ -102,6 +134,10 @@ header .links-menu-superior {
 	margin-left: 2.166666666666667%;
 }
 
+.informacoes-home article img {
+	margin-top :40px;
+}
+
 
 .italico {
 	font-style: italic;
@@ -119,18 +155,151 @@ margin-top: 0;
 	margin-bottom: 0.388888888888889%;
 }
 
+
 footer {
-	text-align: center;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+footer ul{
+	position: relative;
+	display: block;
 	margin: 0 auto;
+	min-width: 500px;
+	max-width: 1100px;
+	font-family: 'ITCAvantGardeStd-Bk'
+
 }
 
-footer > nav {
-	margin-top: 1%;}
+footer ul li {
 
-footer > nav li {
-	display: inline;
+	display: inline-block;
 }
 
+footer a, footer a:hover, footer a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+.rodape-contato img{
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.rodape-contato div{
+	display: block;
+	position: relative;
+	float: left;
+	padding: 10px 0 0 5px
+}
+
+.rodape-contato div strong {
+	width: 100%;
+	display: block;
+	position: relative;
+	float: left;
+	font-size: 12px;
+	font-family: 'ITCAvantGardeStd-Bold';
+
+}
+
+.rodape-contato div span{
+
+	font-family: :'ITCAvantGardeStd-Bk';
+}
+
+.rodape-telefone img{
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.rodape-telefone div{
+	display: block;
+	position: relative;
+	float: left;
+	padding: 10px 0 0 5px
+}
+
+.rodape-telefone div strong {
+	width: 100%;
+	display: block;
+	position: relative;
+	float: left;
+	font-family: 'ITCAvantGardeStd-Bold';
+
+}
+
+.rodape-telefone div span{
+	font-family: :'ITCAvantGardeStd-Bk';
+	font-size: 12px;
+}
+
+.rodape-endereco {
+	width: 270px;
+}
+
+.rodape-endereco img{
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.rodape-endereco div{
+	display: block;
+	position: relative;
+	float: left;
+	padding: 10px 0 0 5px;
+	width: 200px;
+}
+
+.rodape-endereco div strong {
+	width: 100%;
+	display: block;
+	position: relative;
+	float: left;
+	font-family: 'ITCAvantGardeStd-Bold';
+
+}
+
+.rodape-endereco div span{
+	
+	font-family: :'ITCAvantGardeStd-Bk';
+	position: relative;
+	display: block;
+	float: left;
+	font-size: 12px;
+}
+
+.rodape-parceiros img{
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.rodape-parceiros div{
+	display: block;
+	position: relative;
+	float: left;
+	padding: 10px 0 0 5px
+}
+
+.rodape-parceiros div strong {
+	width: 100%;
+	display: block;
+	position: relative;
+	float: left;
+	font-size: 12px;
+	font-family: 'ITCAvantGardeStd-Bold';
+
+}
+
+.rodape-parceiros div span{
+
+	font-family: :'ITCAvantGardeStd-Bk';
+}
 
 /* contato */
 
@@ -194,6 +363,7 @@ footer > nav li {
 	width: 38px;
 	border: 0;
 	margin: 2% 0 0 0;
+	cursor:pointer;
 }
 
 /* fim contato */
@@ -201,6 +371,11 @@ footer > nav li {
 
 
 /* projetos */
+
+.box-projetos a, .box-projetos a:hover, .box-projetos a:visited {
+	text-decoration: none;
+}
+
 
 .box-projetos {
 	width: 100%;

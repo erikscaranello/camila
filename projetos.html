@@ -5,12 +5,9 @@
 <title>Camila Pinotti Arquitetura</title>
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/estilo_navegador.css" />
-
-<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="js/projetos.js"></script>
+<link rel="stylesheet" href="css/reveal.css" />
 
 </head>
-
 <body>
 	<div class="container">
         <header>
@@ -19,83 +16,199 @@
                     <img src="images/logo.png" alt="Camila Pinotti" />
                 </a>
             </figure>
-            
             <nav class="links-menu-superior">
                 <ul>
                     <li>
-                        <a href="projetos.html">
-                            <figure>
-                                <img src="images/projetos.png" alt="projetos" />
-                            </figure>
-                        </a>
+                        <div class='topo-projetos'> 
+                            <a href="projetos.html">                           
+                                <img src="images/projetos.png" alt="projetos" />     
+                                <span>PROJETOS / PROJECTS</span>
+                            </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="contato.html">
-                            <figure>
+                        <div class='topo-contato'>
+                            <a href="contato.html">
                                 <img src="images/contato.png" alt="contato" />
-                            </figure>
-                        </a>
+                                <span>CONTATO / CONTACT</span>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </nav>
         </header>
-        
         <div class="tracos clear">
         </div>
-        
         <section class="box-projetos">
         	<div class="infos-projetos">
             	<p>PROJETOS</p>
-                
                 <ul>
                     <li>
-                        <img src="images/embu_guacu.png" id="embu_guacu" />
+                        <a href="#" data-reveal-id='embu_guacu' class="view-intro">
+                            <img src="images/embu_guacu.png" alt='embu_guacu'/>
+                        </a>
+                        <div id="embu_guacu" class="reveal-modal">
+                             <h1>Embu Guaçu</h1>
+                                <div class='imagem-inicio'>
+                                    <img src="images/embu_guacu/foto_1.png" alt="Embu Guaçu">
+                                </div>
+                                <div class='imagem-meio'>
+                                    <img src="images/embu_guacu/foto_2.png" alt="Embu Guaçu">
+                                </div>
+                                <div class='imagem-fim'>
+                                    <img src="images/embu_guacu/foto_3.png" alt="Embu Guaçu">
+                                </div>
+                             <a class="close-reveal-modal">&#215;</a>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/cadeira.png" id="brooklin" />
+                        <a href="#" data-reveal-id='brooklin' class='view-intro'>
+                            <img src="images/brooklin.png" alt='brooklin'  />
+                        </a>
+                        <div id="brooklin" class="reveal-modal">
+                             <h1>Brooklin</h1>
+                                <div class='imagem-inicio'>
+                                    <img src="images/brooklin/foto_1.png" alt="Brooklin">
+                                </div>
+                                <div class='imagem-meio'>
+                                    <img src="images/brooklin/foto_2.png" alt="Brooklin">
+                                </div>
+                                <div class='imagem-penultima'>
+                                    <img src="images/brooklin/foto_3.png" alt="Brooklin">
+                                </div>
+                                <div class='imagem-fim'>
+                                    <img src="images/brooklin/foto_4.png" alt="Brooklin">
+                                </div>
+                             <a class="close-reveal-modal">&#215;</a>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/sofa.png" id="campo_belo" />
+                        <a href="#" data-reveal-id='campo_belo' class='view-intro'>
+                            <img src="images/campo_belo.png" alt="campo_belo" />
+                        </a>
+                        <div id="campo_belo" class="reveal-modal">
+                             <h1>Campo Belo</h1>
+                                <div class='imagem-inicio'>
+                                    <img src="images/campo_belo/foto_1.png" alt="campo_belo">
+                                </div>
+                                <div class='imagem-meio'>
+                                    <img src="images/campo_belo/foto_2.png" alt="campo_belo">
+                                </div>
+                                <div class='imagem-penultima'>
+                                    <img src="images/campo_belo/foto_3.png" alt="campo_belo">
+                                </div>
+                                <div class='imagem-fim'>
+                                    <img src="images/campo_belo/foto_4.png" alt="campo_belo">
+                                </div>
+                             <a class="close-reveal-modal">&#215;</a>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/banheiro.png" id="perdizes" />
+                        <a href="#" data-reveal-id='perdizes' class='view-intro'>
+                            <img src="images/perdizes.png" alt="perdizes" />
+                        </a>
+                        <div id="perdizes" class="reveal-modal">
+                             <h1>Perdizes</h1>
+                                <div class='imagem-inicio'>
+                                    <img src="images/perdizes/foto_1.png" alt="perdizes">
+                                </div>
+                                <div class='imagem-fim'>
+                                    <img src="images/perdizes/foto_2.png" alt="perdizes">
+                                </div>
+                             <a class="close-reveal-modal">&#215;</a>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/fachada.png" id="aclimacao" />
+                        <a href="#" data-reveal-id='aclimacao' class='view-intro'>
+                            <img src="images/aclimacao.png" alt="aclimacao" />
+                        </a>
+                        <div id="aclimacao" class="reveal-modal">
+                             <h1>Aclimação</h1>
+                                <div class='imagem-inicio'>
+                                    <img src="images/aclimacao/foto_1.png" alt="Aclimação">
+                                </div>
+                                <div class='imagem-meio'>
+                                    <img src="images/aclimacao/foto_2.png" alt="Aclimação">
+                                </div>
+                                <div class='imagem-fim'>
+                                    <img src="images/aclimacao/foto_3.png" alt="Aclimação">
+                                </div>
+                             <a class="close-reveal-modal">&#215;</a>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/quadro.png" id="croquis" />
+                        <a href="#" data-reveal-id='croquis' class='view-intro'>
+                            <img src="images/croqui.png" alt="croqui" />
+                        </a>
+                        <div id="croquis" class="reveal-modal">
+                             <h1>Croquis</h1>
+                                <div class='imagem-inicio'>
+                                    <img src="images/croquis/foto_1.png" alt="Croquis">
+                                </div>
+                                <div class='imagem-meio'>
+                                    <img src="images/croquis/foto_2.png" alt="Croquis">
+                                </div>
+                                <div class='imagem-fim'>
+                                    <img src="images/croquis/foto_3.png" alt="Croquis">
+                                </div>
+                             <a class="close-reveal-modal">&#215;</a>
+                        </div>
                     </li>
-                </ul>
-                
+                </ul> 
             </div>
-        	
             <div class="clear">
         	</div>
-            
         </section>
-        
         <div class="abaixo">	
        	</div>
-        
-        <footer >
-            <nav>
+        <footer>
                 <ul>
                     <li>
-                        <img src="images/email.png" alt="e-mail" />    
+                        <div class="rodape-contato">
+                            <a href="mailto:contato@camilapinotti.com.br">
+                                <img src="images/email.png" alt="e-mail" />
+                                <div>
+                                    <strong>E-mail</strong>
+                                    <span>contato@camilapinotti.com.br</span>
+                                </div>    
+                            </a>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/telefone.png" alt="telefone" />    
+                        <div class="rodape-telefone">
+                            <img src="images/telefone.png" alt="telefone" />    
+                            <div>
+                                <strong>Telefone</strong>
+                                <span>+55 11 9 8273 3332</span>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/endereco.png" alt="endereço" />  
+                        <div class="rodape-endereco">
+                            <img src="images/endereco.png" alt="endereço" /> 
+                            <div>
+                                <strong>Endereço</strong>
+                                <span>Rua dos Lírios, 93 - Vila Mariana</span>
+                                <span>São Paulo/SP - CEP: 04047-040</span>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/parceiro.png" alt="parceiro" />    
+                        <div class="rodape-parceiros">
+                            <a href="http://dfcconstrucoes.com.br">
+                                <img src="images/parceiro.png" alt="parceiro" />   
+                                <div>
+                                    <strong>Parceiro</strong>
+                                    <span>DF&C Construções</span>
+                                </div> 
+                            </a>
+                        </div>
                     </li>
                 </ul>
-            </nav>
         </footer>
     </div>
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.reveal.js"></script>
 </body>
 </html>

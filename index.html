@@ -3,27 +3,19 @@
 <head>
 <meta charset="utf-8" />
 <title>Camila Pinotti Arquitetura</title>
+<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/estilo_navegador.css" />
-
-<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-<!-- <script type="text/javascript" src"https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAIV-cLKfeH9VMVIjIqr2BWldamVCjGyQw&sensor=false"></script> -->
-
-<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> -->
-
-<!-- <script type="text/javascript" src="js/contato.js"></script> -->
-
 </head>
-
 <body>
-	<div class="container">
-        <header>
-            <figure class="logo">
-                <a href="home.html">
-                    <img src="images/logo.png" alt="Camila Pinotti" />
-                </a>
+    <div class="container">
+    	<header>
+        	<figure class="logo">
+            	<a href="home.html">
+            		<img src="images/logo.png" alt="Camila Pinotti" />
+            	</a>
             </figure>
-            <nav class="links-menu-superior">
+        	<nav class="links-menu-superior">
                 <ul>
                     <li>
                         <div class='topo-projetos'> 
@@ -44,39 +36,43 @@
                 </ul>
             </nav>
         </header>
-
         <div class="tracos clear">
         </div>
-
-        <section class="box-contato">
-            <div class="infos-contato">
-                <p>CONTATO</p>
-                <div class="mapa">
-                    <div id="maps-google">
-                        <img src="images/mapa.png" />
-                    </div>
-                    <h1>Endereço</h1>
-                    <p>Rua dos Lírios, 93 - Vila Mariana - São Paulo/SP - CEP: 04047-040</p>
-                </div>
-                <div class="campos-envio">
-                    <form action="#" method="post" id='formularioContato'>
-                       <p><input type="text" name="nome" placeholder="Nome:" class="inputs-contato" /></p>
-                       <p><input type="email" name="email" placeholder="E-mail:" class="inputs-contato" /></p>
-                       <p><input type="text" name="assunto" placeholder="Assunto:" class="inputs-contato" /></p>
-                       <p><textarea name="mensagem" class="inputs-contato text-area"></textarea></p>
-                       <p><input type="submit" name="enviar" value="" class="input-enviar" /></p>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="clear">
-            </div>
-            
+        <section class="fotos">
+            <div id="icarousel">
+                <img src="images/imagem_1.png" id="img_1" />
+            </div> 
         </section>
-
-        <div class="abaixo">    
+        <div class="clear"></div>
+        <section class="info-principal">
+        	<div class="informacoes-home">
+                <article>
+                    <img src="images/foto_camila.png" />
+                </article>
+                <article>
+                    <p>
+                         Formada como arquiteta desde 2010 pela Universidade Anhembi Morumbi, e também como designer de interiores desde 2004, a arquiteta Camila Pinotti já participou de projetos em diversas áreas, tais como: cinemas, concessionárias, residências, motéis, etc.
+                    </p>
+                    <p class="margin-top-2_5">       
+                        Sempre atuando dentro de escritórios no desenvolvimento de projetos, há 3 anos mudou  para a área de construção civil, a fim de ampliar o conhecimento e alcançar um maior diálogo entre o projeto e a execução.
+                        Seus projetos procuram soluções diferentes para cada espaço através de uma visão contemporânea, sem deixar de lado a praticidade e conforto.
+                    </p>
+                </article>
+                <article>
+                    <p class="italico">
+                         Graduated as architect since 2010 by Anhembi Morumbi University, and also as Interior Designer since 2004, the architect Camila Pinotti has already taken part in projects of several areas such as: cinemas, dealers, residences, motels, etc.
+                    </p>
+                    <p class="italico margin-top-2_5">    
+                        Always acting within offices in project development, she moved 3 years ago to civil construction, in order to expand knowledge and achieve greater dialogue between design and execution.
+                        Her projects seek different solutions to each space through a contemporary view, without putting aside handiness and comfort.
+                    </p>
+                </article>
+            </div>        
+            <div class="clear">  
+            </div>    
+        </section>
+        <div class="abaixo">  
         </div>
-
         <footer>
                 <ul>
                     <li>
@@ -122,8 +118,13 @@
                     </li>
                 </ul>
         </footer>
-
-    </div>
-    <script type="text/javascript" src="js/main.js"></script>
+    </div>  
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>      
+    <script type="text/javascript">
+    $(document).ready(function(){
+        setInterval('mostarImagens()' ,5000);
+    });
+    </script>
 </body>
 </html>
