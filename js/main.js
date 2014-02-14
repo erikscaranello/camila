@@ -1,8 +1,11 @@
 function mostarImagens() {
 	
-	if($('#icarousel').children('img').attr('id') == 'img_5') {
+
+	//$('.carousel').carousel();
+	/*
+	if($('#icarousel').children('img').attr('id') == 'img_6') {
 		$('#icarousel').children('img').fadeOut('slow', function(){
-			$('#icarousel').html('<img src="images/imagem_1.png" id="img_1" />');
+			$('#icarousel').html('<img src="images/carousel/img_1.png" id="img_1" />');
 		});
 		$('#icarousel').children('img').fadeIn('slow');	
 	}
@@ -11,10 +14,11 @@ function mostarImagens() {
 		var idString = $('#icarousel').children('img').attr('id');
 		var id = idString.split('_');
 		$('#icarousel').children('img').fadeOut('slow', function(){
-			$('#icarousel').html('<img src="images/imagem_'+(parseInt(id[1]) + 1)+'.png" id="img_'+(parseInt(id[1]) + 1)+'" />');
+			$('#icarousel').html('<img src="images/carousel/img_'+(parseInt(id[1]) + 1)+'.png" id="img_'+(parseInt(id[1]) + 1)+'" />');
 		});
 		$('#icarousel').children('img').fadeIn('slow');			
-	}	
+	}
+	*/	
 }
 
 //reponsavel pelo TOPO
@@ -74,4 +78,21 @@ $('#formularioContato').submit(function(){
 	});
 	
 	return false;
+});
+
+
+$('#pesquisa').mouseover(function(){
+	var nomeId = $(this).attr('id');
+	$(this).attr('src', 'images/' + nomeId + "_hover.png");
+});
+
+$('#pesquisa').mouseout(function(){
+	var nomeId = $(this).attr('id');
+	$(this).attr('src', 'images/' + nomeId + ".png");
+});
+
+$('#pesquisa').click(function(){
+	
+	var hostName = window.location.hostname ;
+	window.open(hostName + "images/Artigo_Camila Pinotti.pdf", "_blank");
 });

@@ -104,11 +104,11 @@ header .links-menu-superior {
 	margin: 0;
 }
 
-.icarousel img {
-	width: 100%;
-	height: 100%;
-}
 
+.carousel img {
+
+  width: 100%;
+}
 
 .info-principal {
 	background: #e3e3e3;
@@ -376,17 +376,21 @@ footer a, footer a:hover, footer a:visited {
 	text-decoration: none;
 }
 
-
-.box-projetos {
+.container-middle {
 	width: 100%;
 	background: #E3E3E3;
+}
+
+.box-projetos {
+	width: 51%;
 	padding-top: 2.255208333333333%;
 	padding-bottom: 3.255208333333333%;
+	margin: 0 auto;
 }
 
 .infos-projetos {
-	margin: 0 auto;
-	width: 51%;	
+	width: 90%;	
+	float: left;
 }
 
 .infos-projetos > p {
@@ -403,6 +407,12 @@ footer a, footer a:hover, footer a:visited {
 .infos-projetos li img {
 	margin-top: 3%;
 	margin-bottom: 3%;
+}
+ 
+.pesquisa {
+	width: 10%;	
+	float: left;
+	cursor: pointer;
 }
 
 .margin-circulo {

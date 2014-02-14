@@ -6,13 +6,10 @@
 <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/estilo_navegador.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
 
-<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
 </head>
-
 <body>
-
     <div class="container">
     	<header>
         	<figure class="logo">
@@ -20,95 +17,197 @@
             		<img src="images/logo.png" alt="Camila Pinotti" />
             	</a>
             </figure>
-            
         	<nav class="links-menu-superior">
                 <ul>
                     <li>
-                        <a href="projetos.html">
-                            <figure>
-                                
-                                <img src="images/projetos.png" alt="projetos" />
-                            </figure>
-                        </a>
+                        <div class='topo-projetos'> 
+                            <a href="projetos.html">                           
+                                <img src="images/projetos.png" alt="projetos" />     
+                                <span>PROJETOS / PROJECTS</span>
+                            </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="contato.html">
-                            <figure>
+                        <div class='topo-contato'>
+                            <a href="contato.html">
                                 <img src="images/contato.png" alt="contato" />
-                            </figure>
-                        </a>
+                                <span>CONTATO / CONTACT</span>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </nav>
         </header>
-        
-    
         <div class="tracos clear">
         </div>
-        
         <section class="fotos">
+                        
+
             <div id="icarousel">
-                <img src="images/imagem_1.png" id="img_1" />
-            </div> 
+                <img src="images/carousel/aclimacao.png" id="img_1" />
+            </div>
+
+            
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="images/carousel/aclimacao.png" id="aclimacao" class="img-responsive" />
+                  <div class="carousel-caption">
+                    Aclimação
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/carousel/brooklin.png" id="brooklin" class="img-responsive" />
+                  <div class="carousel-caption">
+                    Brooklin
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/campo_belo.png" id="campo_belo" class="img-responsive" />
+                  <div class="carousel-caption">
+                    Campo Belo
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/croquis.png" id="croquis" class="img-responsive" />
+                  <div class="carousel-caption">
+                    Croquis
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/embu_guacu.png" id="embu_guacu" class="img-responsive"/>
+                  <div class="carousel-caption">
+                    Embu Guaçu
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/carousel/perdizes.png" id="perdizes" class="img-responsive" />
+                  <div class="carousel-caption">
+                    Perdizes
+                  </div>
+                </div>
+                
+
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
         </section>
-
         <div class="clear"></div>
-
         <section class="info-principal">
         	<div class="informacoes-home">
                 <article>
                     <img src="images/foto_camila.png" />
                 </article>
-
                 <article>
                     <p>
                          Formada como arquiteta desde 2010 pela Universidade Anhembi Morumbi, e também como designer de interiores desde 2004, a arquiteta Camila Pinotti já participou de projetos em diversas áreas, tais como: cinemas, concessionárias, residências, motéis, etc.
                     </p>
                     <p class="margin-top-2_5">       
-    Sempre atuando dentro de escritórios no desenvolvimento de projetos, há 3 anos mudou  para a área de construção civil, a fim de ampliar o conhecimento e alcançar um maior diálogo entre o projeto e a execução.
-    Seus projetos procuram soluções diferentes para cada espaço através de uma visão contemporânea, sem deixar de lado a praticidade e conforto.
+                        Sempre atuando dentro de escritórios no desenvolvimento de projetos, há 3 anos mudou  para a área de construção civil, a fim de ampliar o conhecimento e alcançar um maior diálogo entre o projeto e a execução.
+                        Seus projetos procuram soluções diferentes para cada espaço através de uma visão contemporânea, sem deixar de lado a praticidade e conforto.
                     </p>
                 </article>
-
                 <article>
                     <p class="italico">
                          Graduated as architect since 2010 by Anhembi Morumbi University, and also as Interior Designer since 2004, the architect Camila Pinotti has already taken part in projects of several areas such as: cinemas, dealers, residences, motels, etc.
                     </p>
                     <p class="italico margin-top-2_5">    
-    Always acting within offices in project development, she moved 3 years ago to civil construction, in order to expand knowledge and achieve greater dialogue between design and execution.
-    Her projects seek different solutions to each space through a contemporary view, without putting aside handiness and comfort.
+                        Always acting within offices in project development, she moved 3 years ago to civil construction, in order to expand knowledge and achieve greater dialogue between design and execution.
+                        Her projects seek different solutions to each space through a contemporary view, without putting aside handiness and comfort.
                     </p>
                 </article>
-
             </div>        
-        
             <div class="clear">  
             </div>    
-
         </section>
-        
         <div class="abaixo">  
         </div>
-
-        <footer >
-            <nav>
+        <footer>
                 <ul>
                     <li>
-                        <img src="images/email.png" alt="e-mail" />    
+                        <div class="rodape-contato">
+                            <a href="mailto:contato@camilapinotti.com.br">
+                                <img src="images/email.png" alt="e-mail" />
+                                <div>
+                                    <strong>E-mail</strong>
+                                    <span>contato@camilapinotti.com.br</span>
+                                </div>    
+                            </a>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/telefone.png" alt="telefone" />    
+                        <div class="rodape-telefone">
+                            <img src="images/telefone.png" alt="telefone" />    
+                            <div>
+                                <strong>Telefone</strong>
+                                <span>+55 11 9 8273 3332</span>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/endereco.png" alt="endereço" />  
+                        <div class="rodape-endereco">
+                            <img src="images/endereco.png" alt="endereço" /> 
+                            <div>
+                                <strong>Endereço</strong>
+                                <span>Rua dos Lírios, 93 - Vila Mariana</span>
+                                <span>São Paulo/SP - CEP: 04047-040</span>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/parceiro.png" alt="parceiro" />    
+                        <div class="rodape-parceiros">
+                            <a href="http://dfcconstrucoes.com.br">
+                                <img src="images/parceiro.png" alt="parceiro" />   
+                                <div>
+                                    <strong>Parceiro</strong>
+                                    <span>DF&C Construções</span>
+                                </div> 
+                            </a>
+                        </div>
                     </li>
                 </ul>
-            </nav>
         </footer>
-    
-    </div>        
+    </div>  
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/main.js"></script> 
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>     
+    <script type="text/javascript">
+    $(document).ready(function(){
+        setInterval('mostarImagens()' ,5000);
+    });
+    </script>
 </body>
 </html>
