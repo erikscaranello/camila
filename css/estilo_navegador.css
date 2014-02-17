@@ -105,8 +105,7 @@ header .links-menu-superior {
 }
 
 
-.carousel img {
-
+.carousel, .carousel img {
   width: 100%;
 }
 

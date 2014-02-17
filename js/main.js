@@ -1,5 +1,25 @@
-function mostarImagens() {
+$(document).ready(function(){
+	var element = $('.carousel');
+    var width = element.innerWidth();    
+
+	$('.carousel').flexslider({
+    	animation: "slide",
+    	
+    	itemWidth: width,
+   		itemMargin: 0,
+    	minItems: 1,
+    	maxItems: 1
+  	});
+});
+
+
+
+//function mostarImagens() {
 	
+
+
+
+
 
 	//$('.carousel').carousel();
 	/*
@@ -19,7 +39,7 @@ function mostarImagens() {
 		$('#icarousel').children('img').fadeIn('slow');			
 	}
 	*/	
-}
+//}
 
 //reponsavel pelo TOPO
 
@@ -43,20 +63,6 @@ $('.topo-projetos').on('mouseover',function(e){
 
 });
 
-//reponsavel pelos PROJETOS
-
-$('.box-projetos').find('ul').children().on('mouseover',function(e){
-
-	var item = $(this).find('.view-intro').children('img');
-
-	item.attr('src','images/'+ item.attr('alt')+ '_hover.png');
-
-}).on('mouseout',function(e){
-
-	var item = $(this).find('.view-intro').children('img');
-
-	item.attr('src','images/'+ item.attr('alt')+ '.png');
-});
 
 $('#formularioContato').submit(function(){
 	jQuery.ajax({
@@ -81,18 +87,3 @@ $('#formularioContato').submit(function(){
 });
 
 
-$('#pesquisa').mouseover(function(){
-	var nomeId = $(this).attr('id');
-	$(this).attr('src', 'images/' + nomeId + "_hover.png");
-});
-
-$('#pesquisa').mouseout(function(){
-	var nomeId = $(this).attr('id');
-	$(this).attr('src', 'images/' + nomeId + ".png");
-});
-
-$('#pesquisa').click(function(){
-	
-	var hostName = window.location.hostname ;
-	window.open(hostName + "images/Artigo_Camila Pinotti.pdf", "_blank");
-});
