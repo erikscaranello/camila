@@ -381,14 +381,14 @@ footer a, footer a:hover, footer a:visited {
 }
 
 .box-projetos {
-	width: 51%;
+	width: 65%;
 	padding-top: 2.255208333333333%;
 	padding-bottom: 3.255208333333333%;
 	margin: 0 auto;
 }
 
 .infos-projetos {
-	width: 90%;	
+	width: 79%;	
 	float: left;
 }
 
@@ -409,7 +409,8 @@ footer a, footer a:hover, footer a:visited {
 }
  
 .pesquisa {
-	width: 10%;	
+	margin-left: 2%;
+	width: 11%;	
 	float: left;
 	cursor: pointer;
 }

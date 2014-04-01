@@ -7,13 +7,99 @@
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/estilo_navegador.css" />
 <link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="css/reveal.css" />
+
 
 </head>
 <body>
     <div class="container">
+
+        <div id="aclimacao" class="reveal-modal">
+             <h1>Aclimação</h1>
+                <div class='imagem-inicio'>
+                    <img src="images/aclimacao/foto_1.png" alt="Aclimação">
+                </div>
+                <div class='imagem-meio'>
+                    <img src="images/aclimacao/foto_2.png" alt="Aclimação">
+                </div>
+                <div class='imagem-fim'>
+                    <img src="images/aclimacao/foto_3.png" alt="Aclimação">
+                </div>
+             <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="brooklin" class="reveal-modal">
+             <h1>Brooklin</h1>
+                <div class='imagem-inicio'>
+                    <img src="images/brooklin/foto_1.png" alt="Brooklin">
+                </div>
+                <div class='imagem-meio'>
+                    <img src="images/brooklin/foto_2.png" alt="Brooklin">
+                </div>
+                <div class='imagem-penultima'>
+                    <img src="images/brooklin/foto_3.png" alt="Brooklin">
+                </div>
+                <div class='imagem-fim'>
+                    <img src="images/brooklin/foto_4.png" alt="Brooklin">
+                </div>
+             <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="campo_belo" class="reveal-modal">
+             <h1>Campo Belo</h1>
+                <div class='imagem-inicio'>
+                    <img src="images/campo_belo/foto_1.png" alt="campo_belo">
+                </div>
+                <div class='imagem-meio'>
+                    <img src="images/campo_belo/foto_2.png" alt="campo_belo">
+                </div>
+                <div class='imagem-penultima'>
+                    <img src="images/campo_belo/foto_3.png" alt="campo_belo">
+                </div>
+                <div class='imagem-fim'>
+                    <img src="images/campo_belo/foto_4.png" alt="campo_belo">
+                </div>
+             <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="croquis" class="reveal-modal">
+             <h1>Croquis</h1>
+                <div class='imagem-inicio'>
+                    <img src="images/croquis/foto_1.png" alt="Croquis">
+                </div>
+                <div class='imagem-meio'>
+                    <img src="images/croquis/foto_2.png" alt="Croquis">
+                </div>
+                <div class='imagem-fim'>
+                    <img src="images/croquis/foto_3.png" alt="Croquis">
+                </div>
+             <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="embu_guacu" class="reveal-modal">
+             <h1>Embu Guaçu</h1>
+                <div class='imagem-inicio'>
+                    <img src="images/embu_guacu/foto_1.png" alt="Embu Guaçu">
+                </div>
+                <div class='imagem-meio'>
+                    <img src="images/embu_guacu/foto_2.png" alt="Embu Guaçu">
+                </div>
+                <div class='imagem-fim'>
+                    <img src="images/embu_guacu/foto_3.png" alt="Embu Guaçu">
+                </div>
+             <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="perdizes" class="reveal-modal">
+             <h1>Perdizes</h1>
+                <div class='imagem-inicio'>
+                    <img src="images/perdizes/foto_1.png" alt="perdizes">
+                </div>
+                <div class='imagem-fim'>
+                    <img src="images/perdizes/foto_2.png" alt="perdizes">
+                </div>
+             <a class="close-reveal-modal">&#215;</a>
+        </div>
+
+
     	<header>
         	<figure class="logo">
-            	<a href="home.html">
+            	<a href="index.html">
             		<img src="images/logo.png" alt="Camila Pinotti" />
             	</a>
             </figure>
@@ -44,17 +130,40 @@
             
             <div class="carousel">
                 <ul class="slides">
-                    <li><img src="images/carousel/aclimacao.png" id="aclimacao" /></li>
-                    <li><img src="images/carousel/brooklin.png" id="brooklin" /></li>
-                    <li><img src="images/carousel/campo_belo.png" id="campo_belo" /></li>
-                    <li><img src="images/carousel/croquis.png" id="croquis" /></li>
-                    <li><img src="images/carousel/embu_guacu.png" id="embu_guacu" /></li>
-                    <li><img src="images/carousel/perdizes.png" id="perdizes" /></li>
-                </ul>               
+                    <li>
+                        <a href="#" data-reveal-id='aclimacao' class='view-intro'>
+                            <img src="images/carousel/aclimacao.png" id="aclimacao" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-reveal-id='brooklin' class='view-intro'>
+                            <img src="images/carousel/brooklin.png" id="brooklin" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-reveal-id='campo_belo' class='view-intro'>
+                            <img src="images/carousel/campo_belo.png" id="campo_belo" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-reveal-id='croquis' class='view-intro'>
+                            <img src="images/carousel/croquis.png" id="croquis" />
+                        </a>    
+                    </li>
+                    
+
+                    <li>
+                        <a href="#" data-reveal-id='embu_guacu' class="view-intro">
+                            <img src="images/carousel/embu_guacu.png" id="embu_guacu" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-reveal-id='perdizes' class='view-intro'>
+                            <img src="images/carousel/perdizes.png" id="perdizes" />
+                        </a>
+                    </li>
+                </ul>
             </div>
-            
-
-
         </section>
         <div class="clear"></div>
         <section class="info-principal">
@@ -120,7 +229,7 @@
                     </li>
                     <li>
                         <div class="rodape-parceiros">
-                            <a href="http://dfcconstrucoes.com.br">
+                            <a href="http://dfcconstrucoes.com.br" target="_blank">
                                 <img src="images/parceiro.png" alt="parceiro" />   
                                 <div>
                                     <strong>Parceiro</strong>
@@ -135,5 +244,6 @@
     <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="js/main.js"></script>  
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/jquery.reveal.js"></script>
 </body>
 </html>
