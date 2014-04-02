@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	$('.carousel').flexslider({
     	animation: "slide",
-    	
+    	slideshow: false,
     	itemWidth: width,
    		itemMargin: 0,
     	minItems: 1,

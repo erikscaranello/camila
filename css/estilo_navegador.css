@@ -23,8 +23,7 @@ body {
 
 
 .links-menu-superior .topo-projetos span{
-	font-family: arial;
-	font-size: 8px;
+	font-size: 0.75em;
 	text-align: center;
 	margin-left: 3px
 }
@@ -35,17 +34,15 @@ body {
 }
 
 .links-menu-superior .topo-contato span{
-	font-family: arial;
-	font-size: 8px;
+	font-size: 0.75em;
 	text-align: center;
 	width: 100%;
-	margin-left: 10px
+	margin-left: 25px
 }
 
 .links-menu-superior li {
 	display: block;
 	float: left;
-	width: 100px
 }
 
 .links-menu-superior a, .links-menu-superior a:hover, .links-menu-superior a:visited {
@@ -250,7 +247,7 @@ footer a, footer a:hover, footer a:visited {
 	display: block;
 	position: relative;
 	float: left;
-	padding: 10px 0 0 5px;
+	padding: 5px 0 0 5px;
 	width: 200px;
 }
 
